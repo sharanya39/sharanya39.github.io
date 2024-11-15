@@ -7,100 +7,76 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
         header {
-            background: #4bc8cc;
-            color: #fff;
-            padding: 10px 0;
             text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px 0;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            text-align: center;
-            padding: 10px 0;
-            background: #f4f4f4;
-            border-bottom: 2px solid #ddd;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #4bc8cc;
+        header img {
+            max-width: 100%;
+            height: auto;
         }
         section {
             padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
         }
-        .cta {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .cta a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #fff;
-            background: #4bc8cc;
+        .code-snippet {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
             border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .cta a:hover {
-            background: #4bc8cc;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        footer p {
-            margin: 0;
+            font-family: "Courier New", Courier, monospace;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Python Training Program</h1>
+        <h1>Python Training</h1>
+        <img src="Training/sharanya39.github.io/python training image1.webp" alt="Python Training">
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About the Training</h2>
-        <p>Welcome to our Python Training Program! Whether you are a beginner or an experienced developer, our training is designed to help you master Python programming through hands-on learning and real-world projects.</p>
+
+    <section>
+        <h2>Introduction to Python</h2>
+        <p>Python is a versatile programming language widely used for web development, data science, artificial intelligence, and more. Its simplicity makes it an excellent choice for beginners.</p>
     </section>
-    <section id="courses">
-        <h2>Our Courses</h2>
-        <ul>
-            <li><strong>Python for Beginners:</strong> Learn the fundamentals of Python programming.</li>
-            <li><strong>Intermediate Python:</strong> Dive deeper into Python libraries and tools.</li>
-            <li><strong>Advanced Python:</strong> Master advanced topics like web scraping, automation, and data analysis.</li>
-        </ul>
+
+    <section>
+        <h2>Understanding Literals and Data Types</h2>
+        <p>Literals represent fixed values in Python. Here are some examples:</p>
+        <div class="code-snippet">
+            <pre>
+# Numeric Literal
+x = 10   # Integer
+y = 3.14 # Float
+
+# String Literal
+name = "Python"
+
+# Boolean Literal
+is_active = True
+            </pre>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions? Get in touch with us!</p>
-        <p>Email: <a href="mailto:training@Neuronworks.com">training@Neuronworks.com</a></p>
-        <p>Phone: +1-234-567-8901</p>
+
+    <section>
+        <h2>Try It Yourself</h2>
+        <p>Use the following code in Jupyter Notebook:</p>
+        <div class="code-snippet">
+            <pre>
+print("Welcome to Python Training!")
+print("Literals Examples:")
+x = 10
+y = 3.14
+name = "Python"
+is_active = True
+print(f"Integer: {x}, Float: {y}, String: {name}, Boolean: {is_active}")
+            </pre>
+        </div>
+        <p>Or open this <a href="https://colab.research.google.com/" target="_blank">interactive notebook</a> to run the code online!</p>
     </section>
-    <div class="cta">
-        <a href="#register">Register Now</a>
-    </div>
-    <footer>
-        <p>&copy; 2024 Python Training Program. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
